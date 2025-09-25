@@ -1,0 +1,36 @@
+{
+	"configurations": [
+		{
+			"type": "totvs_language_web_debug",
+			"request": "launch",
+			"name": "Smart Client Web Debug",
+			"program": "${command:AskForProgramName}",
+			"isMultiSession": true,
+			"enableTableSync": true
+		}
+	],
+	"lastPrograms": [
+		{
+			"label": "U_Main"
+		},
+		{
+			"label": "U_zLogi02"
+		},
+		{
+			"label": "U_pTeste"
+		},
+		{
+			"label": "u_asdf"
+		},
+		{
+			"label": "u_teste9"
+		},
+		{
+			"label": "u_zzlog"
+		},
+		{
+			"label": "SIGAFIN"
+		}
+	],
+	"lastProgramExecuted": "SIGAFIN"
+}
