@@ -1,3 +1,5 @@
 {
-    "totvsLanguageServer.welcomePage": false
+  "files.associations": {
+    "*.prw": "advpl"
+  }
 }
