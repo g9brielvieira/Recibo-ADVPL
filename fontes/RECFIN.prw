@@ -10,7 +10,7 @@ Recibo Financeiro
 User Function RECIBOTST
 	LOCAL oDlg := NIL
 
-	PRIVATE cTitulo := "Impressão - Recibo de Pagamento"
+	PRIVATE cTitulo := "ImpressÃ£o - Recibo de Pagamento"
 	PRIVATE oPrn    := NIL
 	PRIVATE oFont1  := NIL
 	PRIVATE oFont2  := NIL
@@ -78,10 +78,10 @@ STATIC FUNCTION Recibo()
 	nLin += 00100
 
 
-	oPrn:Say(nLin,0050,OemToAnsi("Declaro pelo presente que recebí o valor abaixo nos termos abaixo  mencionados,"),oFont2)
+	oPrn:Say(nLin,0050,OemToAnsi("Declaro pelo presente que recebÃ­ o valor abaixo nos termos abaixo  mencionados,"),oFont2)
 	nLin += 00100
 
-	oPrn:Say(nLin,0050,OemToAnsi("dando-se a plena quitação do título:"),oFont2)
+	oPrn:Say(nLin,0050,OemToAnsi("dando-se a plena quitaÃ§Ã£o do tÃ­tulo:"),oFont2)
 	nLin += 00100
 
 
@@ -92,7 +92,7 @@ STATIC FUNCTION Recibo()
 
 	nLin += 00100
 
-	oPrn:Say(nLin,0050,OemToAnsi("Número do Título: "  + SE1->E1_NUM),oFont2)
+	oPrn:Say(nLin,0050,OemToAnsi("NÃºmero do TÃ­tulo: "  + SE1->E1_NUM),oFont2)
 	nLin += 00100
 
 	oPrn:Say(nLin,0050,OemToAnsi("Data da baixa: "  + DtoC(SE1->E1_BAIXA)),oFont2)
@@ -113,13 +113,13 @@ STATIC FUNCTION Recibo()
 	oPrn:Say(nLin,0050,OemToAnsi("Saldo do Titulo: R$ " +Alltrim(Transform(SE1->E1_SALDO,"@E 99,999,999.99"))),oFont2)
 	nLin += 00100 // Adiciona uma linha antes de imprimir o extenso
 
-	oPrn:Say(nLin,0050,OemToAnsi("Dados bancários:" ),oFont2)
+	oPrn:Say(nLin,0050,OemToAnsi("Dados bancÃ¡rios:" ),oFont2)
 	nLin += 00100
 
 	oPrn:Say(nLin,0050,OemToAnsi("Banco: " + SE5->E5_BANCO),oFont2)
 	nLin += 00100
 
-	oPrn:Say(nLin,0050,OemToAnsi("Agência: " + SE5->E5_AGENCIA),oFont2)
+	oPrn:Say(nLin,0050,OemToAnsi("AgÃªncia: " + SE5->E5_AGENCIA),oFont2)
 	nLin += 00100
 
 	oPrn:Say(nLin,0050,OemToAnsi("Conta: " + SE5->E5_CONTA),oFont2)
@@ -128,7 +128,7 @@ STATIC FUNCTION Recibo()
 
 	_cDtExp   := Padr(AllTrim(Str(Day(dDataBase)))+" de "+MesExtenso(Month(dDataBase))+" de "+Str(Year(dDataBase),4),60)
 
-	oPrn:Say(nLin,1200,"Várzea Grande,  "+_cDtExp,oFont3)
+	oPrn:Say(nLin,1200,"VÃ¡rzea Grande,  "+_cDtExp,oFont3)
 
 	nLin += 0300
 	oPrn:Say(nLin,1200,"________________________________",oFont3)
