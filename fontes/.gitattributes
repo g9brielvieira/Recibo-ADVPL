@@ -1,0 +1,2 @@
+# Forçar arquivos .prw a serem reconhecidos como AdvPL (ou mude para xBase se preferir)
+*.prw linguist-language=AdvPL
